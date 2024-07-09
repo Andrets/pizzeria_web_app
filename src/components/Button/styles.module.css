@@ -1,0 +1,32 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	width: 304px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 24.2px;
+	background: #FFFFFF;
+	border-radius: 28px;
+	color: #000000;
+	text-align: left;
+	border: none;
+	cursor: pointer;
+}
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 105px;
+	height: 96px;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 77.45px;
+	-webkit-user-select: none;
+	user-select: none;
+	> img {
+		width: 70px;
+		height: 70px;
+	}
+}

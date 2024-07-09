@@ -1,0 +1,112 @@
+.ingredients__container {
+	font-family: 'Inter', sans-serif;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 24px;
+	min-width: 260px;
+}
+
+.ingredients__name {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline-start: 39px;
+	padding-inline-end: 51px;
+	padding-block-start: 27px;
+	gap: 14px;
+}
+
+.ingredients__exit {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.plashka {
+	display: flex;
+	gap: 21px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 247, 234, 1);
+	border-radius: 27px;
+	margin-inline-start: 39px;
+	margin-inline-end: 51px;
+	margin-top: 20px;
+	padding: 20px 27px 19px 14px;
+	> p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		> span {
+			font-weight: 700;
+		}
+	}
+}
+
+.ingredients__addCart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 26px;
+	background-color: rgba(255, 247, 234, 1);
+	border-top-left-radius: 39px;
+	border-top-right-radius: 39px;
+	padding: 38px 47px 29px 39px;
+}
+
+.ingredients__price {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	> span {
+		font-weight: 700;
+	}
+}
+
+.ingredients__btn {
+	width: 311px;
+	height: 59px;
+	border-radius: 43px;
+	border: none;
+	background-color: rgba(247, 159, 0, 1);
+	color: rgba(0, 0, 0, 1);
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.ingredients__addCart {
+	background-color: rgba(255, 247, 234, 1);
+	margin-top: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 35px 44px 36px 38px;
+	border-top-left-radius: 39px;
+	border-top-right-radius: 39px;
+}
+
+.ingredients__button {
+	background-color: rgba(247, 159, 0, 1);
+	border-radius: 43px;
+	width: 311px;
+	height: 59px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: 'Inter', sans-serif;
+	border: none;
+	color: #000000;
+}
+
+.ingredients__title {
+	margin-top: 33px;
+	padding-inline-start: 39px;
+	padding-inline-end: 51px;
+	padding-block-start: 27px;
+}

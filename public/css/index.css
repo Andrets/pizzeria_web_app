@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+:root {
+  --border-color: #0000001a;
+	--background-color: #FFF7EA;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+

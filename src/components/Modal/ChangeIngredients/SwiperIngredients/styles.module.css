@@ -1,0 +1,9 @@
+.swiper {
+	margin-top: 33px;
+	/* padding-inline-start: 35px;
+	padding-inline-end: 57px; */
+  height: 100%;
+  width: 100%;
+	max-width: 301px;
+	max-height: 190px;
+}

@@ -1,0 +1,16 @@
+.slider {
+	width: 100%;
+	margin-top: 24px;
+	margin-left: 46px;
+}
+
+.slide {
+  display: grid;
+  place-items: center;
+  width: auto !important;
+  margin-right: 6px;
+}
+
+.slide:last-child {
+  margin-right: 0;
+}

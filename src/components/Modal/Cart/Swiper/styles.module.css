@@ -1,0 +1,20 @@
+.swiper {
+	margin-top: 29px;
+  height: 100%;
+	width: 100%;
+  max-width: 303px;
+	max-height: 410px;
+	/* padding: 0 52px 0 38px; */
+}
+
+.swiperSlide {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+/* Убираем последний отступ */
+.swiperSlide:last-child {
+  margin-bottom: 0;
+}

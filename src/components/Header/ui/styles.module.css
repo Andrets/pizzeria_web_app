@@ -1,0 +1,34 @@
+.cartWrapper {
+	display: flex;
+	align-items: center;
+	background: #FFDFA5;
+	border-radius: 43px;
+	height: 43px;
+}
+
+.cart {
+	display: flex; 
+	background:#FFDFA5;
+	border-top-left-radius: 43px;
+	border-bottom-left-radius: 43px;
+}
+
+.cartIcon {
+	margin-block: 10px;
+	margin-left: 15px;
+}
+
+.cartCount {
+	background: #F79F00;
+	border-radius: 50%;
+	width: 43px;
+	height: 43px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 9px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000000;
+}

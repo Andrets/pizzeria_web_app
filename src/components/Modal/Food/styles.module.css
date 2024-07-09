@@ -1,0 +1,111 @@
+.food__container {
+	font-family: 'Inter', sans-serif;
+}
+
+.food__name {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline-start: 39px;
+	padding-inline-end: 51px;
+	padding-block-start: 27px;
+	gap: 14px;
+	> h2 {
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 24px;
+		min-width: 260px;
+	}
+}
+
+.food__exit {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.food__description {
+	margin-top: 13px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 15px;
+	padding-inline: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.food__allergens > span {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #F79F00;
+}
+
+.food__nutrients {
+	display: flex;
+	gap: 11px;
+	> div {
+		background-color: #FFF7EA;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		padding: 12px;
+		border-radius: 22px;
+		width: 148px;
+	}
+}
+
+.food__measure > span, .food__energy > span {
+	background-color: #FFFFFF;
+	padding-block: 10px;
+	border-radius: 43px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	width: 124px;
+}
+
+.food__change {
+	margin-top: 22px;
+	margin-inline: 40px;
+	width: 305px;
+	height: 43px;
+	border-radius: 43px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	background-color: transparent;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: 'Inter', sans-serif;
+	color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+.food__addCart {
+	background-color: rgba(255, 247, 234, 1);
+	margin-top: 22px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 35px 44px 36px 38px;
+	border-top-left-radius: 39px;
+	border-top-right-radius: 39px;
+}
+
+.food__button {
+	background-color: rgba(247, 159, 0, 1);
+	border-radius: 43px;
+	width: 311px;
+	height: 59px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	font-family: 'Inter', sans-serif;
+	border: none;
+	color: #000000;
+}

@@ -1,0 +1,80 @@
+.food__container {
+	font-family: 'Inter', sans-serif;
+}
+
+.food__name {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline-start: 39px;
+	padding-inline-end: 51px;
+	padding-block-start: 27px;
+	gap: 14px;
+	> h2 {
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 24px;
+		min-width: 260px;
+	}
+}
+
+.food__exit {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.plashka {
+	display: flex;
+	gap: 21px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 247, 234, 1);
+	border-radius: 27px;
+	margin-inline-start: 39px;
+	margin-inline-end: 51px;
+	margin-top: 20px;
+	padding: 20px 27px 19px 14px;
+	> p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		> span {
+			font-weight: 700;
+		}
+	}
+}
+
+.food__addCart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 26px;
+	background-color: rgba(255, 247, 234, 1);
+	border-top-left-radius: 39px;
+	border-top-right-radius: 39px;
+	padding: 38px 47px 29px 39px;
+}
+
+.food__price {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	> span {
+		font-weight: 700;
+	}
+}
+
+.food__btn {
+	width: 311px;
+	height: 59px;
+	border-radius: 43px;
+	border: none;
+	background-color: rgba(247, 159, 0, 1);
+	color: rgba(0, 0, 0, 1);
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+}

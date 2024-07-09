@@ -1,0 +1,22 @@
+.foodList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 13px;
+	margin-top: 24px;
+	margin-inline-start: 43px;
+	list-style: none;
+	padding: 0;
+	font-size: 1.5rem;
+}
+
+.foodItem {
+	background-color: #FFFFFF;
+	width: 148px;
+	border-radius: 22px;
+}
+
+.notFound {
+	margin-top: 24px;
+	padding-inline-end: 43px;
+	font-size: 1.5rem;
+}

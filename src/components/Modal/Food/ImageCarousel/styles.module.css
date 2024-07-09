@@ -1,0 +1,40 @@
+.slider {
+	width: 100%;
+	height: auto;
+	margin-top: 38px;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+
+.firstSlide {
+	margin-left: 0 !important; /* Убираем отступ у первого слайда */
+}
+
+.lastSlide {
+	margin-right: 0 !important; /* Убираем отступ у последнего слайда */
+}
+
+.image {
+	width: 311px;
+	height: 205px;
+	object-fit: cover;
+	border-radius: 22px;
+}
+
+/* Добавим дополнительный стиль для отступов */
+.swiper-wrapper {
+	margin-left: 16px; /* Отступ для всех слайдов */
+}
+
+.swiper-slide:first-child {
+	margin-left: 0; /* Убираем отступ у первого слайда */
+}
+
+.swiper-slide:last-child {
+	margin-right: 0; /* Убираем отступ у последнего слайда */
+}

@@ -108,4 +108,9 @@
 	font-family: 'Inter', sans-serif;
 	border: none;
 	color: #000000;
+	cursor: pointer;
+	&:disabled {
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
 }

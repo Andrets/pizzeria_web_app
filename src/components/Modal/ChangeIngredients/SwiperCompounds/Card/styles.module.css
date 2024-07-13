@@ -54,4 +54,9 @@
 	border-radius: 43px;
 	color:rgba(0, 0, 0, 1);
 	border: none;
+	cursor: pointer;
+}
+
+.buttonAdded {
+	background: #FFDFA5;
 }

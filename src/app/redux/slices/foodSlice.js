@@ -1,24 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-	foodList: [],
+	menuList: [],
 	compoundList: [],
-	food: {},
-	filteredFoodList: [],
+	menu: {},
+	filteredMenuList: [],
 }
 
 export const foodSlice = createSlice({
 	name: 'food',
 	initialState,
 	reducers: {
-		addFoodList: (state, action) => {
-			state.foodList = action.payload
+		setMenuList: (state, action) => {
+			state.menuList = action.payload
 		},
-		addFood: (state, action) => {
-			state.foodList.push(action.payload)
+		addMenu: (state, action) => {
+			state.menuList.push(action.payload)
 		},
-		setFilteredFoodList: (state, action) => {
-			state.filteredFoodList = action.payload
+		setFilteredMenuList: (state, action) => {
+			state.filteredMenuList = action.payload
 		},
 		setCompoundList: (state, action) => {
 			state.compoundList = action.payload
@@ -27,9 +27,9 @@ export const foodSlice = createSlice({
 })
 
 export const {
-	addFoodList,
-	addFood,
-	setFilteredFoodList,
+	setMenuList,
+	addMenu,
+	setFilteredMenuList,
 	setCompoundList
 } = foodSlice.actions
 

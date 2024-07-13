@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
 	isOpen: false,
 	modalType: '',
+	height: 0,
 	data: {
 		food: {},
 		isChangeIngredients: false
@@ -39,6 +40,9 @@ export const modalsSlice = createSlice({
 		openCartModal: (state) => {
 			state.modalType = 'CART'
 			state.isOpen = true
+		},
+		setHeight: (state, action) => {
+			state.height = action.payload
 		}
 	}
 })
@@ -49,7 +53,8 @@ export const {
 	openFoodModal,
 	openPizzaDesignerModal,
 	openCartModal,
-	openChangeIngredientsModal
+	openChangeIngredientsModal,
+	setHeight
 } = modalsSlice.actions
 
 export default modalsSlice.reducer

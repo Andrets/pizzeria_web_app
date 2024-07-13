@@ -1,27 +1,30 @@
+import { url } from '@constants/url'
 import { createApi } from '@reduxjs/toolkit/query/react'
-import { userMockData } from '@utils/mock/user'
+import axiosBaseQuery from '@utils/axiosBaseQuery'
 
 export const userApi = createApi({
 	reducerPath: 'userApi',
-	baseQuery: async () => {
-		await new Promise((resolve) => setTimeout(resolve, 1000));
-		return { data: userMockData }
-	},
+	baseQuery: axiosBaseQuery({
+		baseUrl: `${url}/users`
+	}),
 	tagTypes: ['User'],
 	endpoints: (builder) => ({
 		getAllUsers: builder.query({
-			query: () => '/users',
+			query: () => ({
+				url: '/',
+				method: 'GET'
+			}),
 			providesTags: ['User']
 		}),
 		getUserById: builder.query({
-			query: (id) => `/users/${id}`,
+			query: (tg_id) => `/${tg_id}`,
 			providesTags: ['User']
 		}),
 		createUser: builder.mutation({
 			query: (user) => ({
-				url: '/users',
+				url: '/',
 				method: 'POST',
-				body: user
+				data: user
 			}),
 			invalidatesTags: ['User']
 		})

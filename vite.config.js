@@ -12,7 +12,8 @@ export default defineConfig({
       '@shared': '/src/shared',
       '@redux': '/src/app/redux',
       '@utils': '/src/utils',
-      '@hooks': '/src/hooks'
+      '@hooks': '/src/hooks',
+      '@constants': '/src/constants'
     }
   }
 })

@@ -26,6 +26,7 @@
 }
 
 .cart__buy {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -35,6 +36,13 @@
 	margin-top: 25px;
 	border-top-left-radius: 39px;
 	border-top-right-radius: 39px;
+}
+
+.cart__buy.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .cart__price {
@@ -53,6 +61,10 @@
 	width: 308px;
 	height: 43px;
 	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
 	&:focus {
 		outline: none;
 	}

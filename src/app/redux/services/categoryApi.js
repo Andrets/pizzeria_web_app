@@ -1,19 +1,22 @@
+import { url } from '@constants/url'
 import { createApi } from '@reduxjs/toolkit/query/react'
-import { categoryMockData } from '@utils/mock/category'
+import axiosBaseQuery from '@utils/axiosBaseQuery'
 
 export const categoryApi = createApi({
 	reducerPath: 'categoryApi',
-	baseQuery: async () => {
-		await new Promise((resolve) => setTimeout(resolve, 500));
-		return { data: categoryMockData }
-	},
+	baseQuery: axiosBaseQuery({
+		baseUrl: `${url}/categories`
+	}),
 	tagTypes: ['Category'],
 	endpoints: (build) => ({
 		getAllCategories: build.query({
-			query: () => '/categories',
+			query: () => ({
+				url: '/',
+				method: 'GET'
+			}),
 			providesTags: ['Category']
 		})
 	}),
 })
 
-export const { useGetAllCategoriesQuery } = categoryApi
+export const { useLazyGetAllCategoriesQuery } = categoryApi

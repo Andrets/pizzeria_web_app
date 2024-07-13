@@ -1,5 +1,5 @@
-import { setFilteredFoodList } from '@app/redux/slices/foodSlice'
-import { setSearchQuery } from '@app/redux/slices/searchSlice'
+import { setFilteredMenuList } from '@redux/slices/foodSlice'
+import { setSearchQuery } from '@redux/slices/searchSlice'
 import lodash from 'lodash'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -10,17 +10,17 @@ export const SearchInput = () => {
 	const { searchQuery } = useSelector((state) => state.search)
 	const [localSearch, setLocalSearch] = useState(searchQuery)
 
-	const { foodList } = useSelector((state) => state.food)
+	const { menuList } = useSelector((state) => state.food)
 
 	useEffect(() => {
 		const handleSearch = lodash.debounce((query) => {
-			const filteredList = foodList.filter((food) => 
+			const filteredList = menuList.filter((food) => 
 				food.name.toLowerCase().includes(query.toLowerCase())
 			);
-			dispatch(setFilteredFoodList(filteredList))
+			dispatch(setFilteredMenuList(filteredList))
 		}, 400)
 		handleSearch(localSearch)
-	}, [localSearch, foodList, dispatch])
+	}, [localSearch, menuList, dispatch])
 
 	const handleInputSearch = (e) => {
 		setLocalSearch(e.target.value)

@@ -1,27 +1,34 @@
+import { url } from '@constants/url'
 import { createApi } from '@reduxjs/toolkit/query/react'
-import { foodMockData } from '@utils/mock/food'
+import axiosBaseQuery from '@utils/axiosBaseQuery'
+
 
 export const foodApi = createApi({
 	reducerPath: 'foodApi',
-	baseQuery: async () => {
-		return {
-			data: foodMockData
-		}
-	},
-	tagTypes: ['Food'],
+	baseQuery: axiosBaseQuery({
+		baseUrl: `${url}`
+	}),
+	tagTypes: ['Menu', 'Compounds'],
 	endpoints: (build) => ({
 		getAllFood: build.query({
-			query: () => `/food`,
-			providesTags: ['Food']
+			query: () => ({
+				url: '/menu/',
+				method: 'GET'
+			}),
+			providesTags: ['Menu']
 		}),
 		getAllCompounds: build.query({
-			query: () => `/food/compounds`,
-			providesTags: ['Food']
+			query: () => ({
+				url: '/compounds/',
+				method: 'GET'
+			}),
+			providesTags: ['Compounds']
 		})
 	})
 })
 
 export const {
-	useGetAllFoodQuery,
+	useLazyGetAllFoodQuery,
+	useLazyGetAllCompoundsQuery,
 	useGetAllCompoundsQuery
 } = foodApi

@@ -16,7 +16,7 @@ export const SwiperCartItems = ({ items }) => {
 		>
 			{items.map((item, index) => (
 				<SwiperSlide key={index} className={styles.swiperSlide}>
-					<ItemCard item={item} />
+					<ItemCard item={item} index={index} />
 				</SwiperSlide>
 			))}
 		</Swiper>

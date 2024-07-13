@@ -1,7 +1,9 @@
 import cartReducer from '@redux/slices/cartSlice'
 import categoryReducer from '@redux/slices/categorySlice'
+import changeIngredientsReducer from '@redux/slices/changeIngredientsSlice'
 import foodReducer from '@redux/slices/foodSlice'
 import modalsReducer from '@redux/slices/modalsSlice'
+import pizzaDesignReducer from '@redux/slices/pizzaDesignSlice'
 import searchReducer from '@redux/slices/searchSlice'
 import userReducer from '@redux/slices/userSlice'
 import { configureStore } from '@reduxjs/toolkit'
@@ -21,6 +23,8 @@ export const store = configureStore({
 		food: foodReducer,
 		category: categoryReducer,
 		user: userReducer,
+		pizzaDesign: pizzaDesignReducer,
+		changeIngredients: changeIngredientsReducer
 	},
 	middleware: (getDefaultMiddleware) =>
 		getDefaultMiddleware()

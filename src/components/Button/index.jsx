@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
 import styles from './styles.module.css'
 
-export const Button = ({ ...props }) => {
-	const { title, icon } = props
+export const Button = ({ title, icon, ...props }) => {
 	return (
 		<button {...props} type="button" className={styles.button}>
 			{icon && 
@@ -18,9 +17,6 @@ export const Button = ({ ...props }) => {
 }
 
 Button.propTypes = {
-	props: {
-		title: PropTypes.string.isRequired,
-		icon: PropTypes.string,
-		onClick: PropTypes.func
-	}
+	title: PropTypes.string.isRequired,
+	icon: PropTypes.string,
 }

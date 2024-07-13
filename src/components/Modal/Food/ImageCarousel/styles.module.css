@@ -20,6 +20,11 @@
 }
 
 .image {
+	width: 100%;
+	height: auto;
+	margin-top: 38px;
+	margin-left: 35px;
+	object-fit: cover;
 	width: 311px;
 	height: 205px;
 	object-fit: cover;

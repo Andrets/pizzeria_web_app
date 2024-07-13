@@ -26,4 +26,7 @@
 		line-height: 15px;
 		cursor: pointer;
 	}
+	> .ingredient__btnAdded {
+		background: #FFDFA5;
+	}
 }

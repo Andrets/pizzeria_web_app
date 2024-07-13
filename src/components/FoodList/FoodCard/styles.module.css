@@ -18,6 +18,13 @@
 	padding: 0 13px 13px 11px;
 }
 
+.foodImage {
+	border-radius: 22px;
+	object-fit: cover;
+	width: 148px;
+	height: 134px;
+}
+
 .foodName {
 	font-weight: 500;
 	font-size: 12px;

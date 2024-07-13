@@ -1,4 +1,6 @@
+import { useTelegram } from '@hooks/useTelegram'
 import { MainMenu } from '@pages'
+import { useEffect } from 'react'
 import { Route, Routes } from 'react-router'
 
 const AuthenticatedRoute = () => {
@@ -12,6 +14,11 @@ const AuthenticatedRoute = () => {
 }
 
 export const App = () => {
+  const { expand, enableClosingConfirmation } = useTelegram();
+  useEffect(() => {
+    expand?.();
+  }, [expand])
+  enableClosingConfirmation();
   return (
     <>
       <AuthenticatedRoute />

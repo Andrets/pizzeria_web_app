@@ -16,7 +16,6 @@
   position: relative;
   max-width: 393px;
   height: 85%;
-  background-color: #FFF7EA;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
   display: flex;
@@ -30,7 +29,8 @@
   overflow-x: hidden;
   scrollbar-width: none;
   height: 100%;
-  background-color: #FFF7EA
+  background-color: #fff;
+  overscroll-behavior-block: none;
 }
 
 .ModalContent::-webkit-scrollbar {

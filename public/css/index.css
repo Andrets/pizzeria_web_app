@@ -13,8 +13,8 @@
 }
 
 body {
-	background-color: var(--background-color);
 	font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -27,7 +27,6 @@ html, body, #root {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--background-color);
 }
 
 #root {

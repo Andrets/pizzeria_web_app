@@ -12,6 +12,7 @@ export const CartModal = () => {
 	const items = useSelector((state) => state.cart.cart)
 	const [promo, setPromo] = useState('')
 	const [price, setPrice] = useState(0)
+	const [fixed, setFixed] = useState(false)
 
 	const cartBuyRef = useRef(null);
 
@@ -32,8 +33,10 @@ export const CartModal = () => {
 		const handleResize = () => {
 			if (items.length < 3) {
 				cartBuyRef.current.classList.add(styles.fixed);
+				setFixed(true);
 			} else {
 				cartBuyRef.current.classList.remove(styles.fixed);
+				setFixed(false);
 			}
 		};
 
@@ -51,7 +54,7 @@ export const CartModal = () => {
 					<img src="img/exit.svg" alt="exit" />
 				</button>
 			</div>
-			<SwiperCartItems items={items} />
+			<SwiperCartItems items={items} fixed={fixed} />
 			<div className={styles.cart__buy} ref={cartBuyRef}>
 				<p className={styles.cart__price}><span>Стоимость: </span>{price}₽</p>
 				<input type="text" placeholder='Ввести промокод' className={styles.cart__promo} value={promo} onChange={(e) => setPromo(e.target.value)} />

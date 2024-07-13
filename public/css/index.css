@@ -19,20 +19,27 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+  width: 0;
 }
 
 html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   overflow-x: hidden;
+}
+
+#root::-webkit-scrollbar {
+  display: none;
+  width: 0;
 }
 
 

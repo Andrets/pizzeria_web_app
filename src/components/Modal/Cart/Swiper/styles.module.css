@@ -18,3 +18,7 @@
 .swiperSlide:last-child {
   margin-bottom: 0;
 }
+
+.swiper.fix {
+  height: 50vh;
+}

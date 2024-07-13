@@ -22,14 +22,14 @@ export const MainMenu = () => {
     <div className={styles.mainmenu}>
       <Header />
       {!isOpen ? (
-        <>
-          <Button title="СОБЕРИ СВОЮ ПИЦЦУ!" icon="img/pizza.png" onClick={open} />
-          <Carousel />
-        </>
-      ) : (
-        <SearchInput />
-      )}
-			<FoodList />
+          <>
+            <Button title="СОБЕРИ СВОЮ ПИЦЦУ!" icon="img/pizza.png" onClick={open} />
+            <Carousel />
+          </>
+        ) : (
+          <SearchInput />
+        )}
+        <FoodList />
       <Modal />
     </div>
   );

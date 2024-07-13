@@ -14,11 +14,12 @@ const AuthenticatedRoute = () => {
 }
 
 export const App = () => {
-  const { expand, enableClosingConfirmation } = useTelegram();
+  const { expand, enableClosingConfirmation, disableVerticalSwipes, setBackgroundColor } = useTelegram();
   useEffect(() => {
     expand?.();
   }, [expand])
   enableClosingConfirmation();
+  setBackgroundColor('#FFF7EA');
   return (
     <>
       <AuthenticatedRoute />
